@@ -54,8 +54,8 @@ set autoindent
 " truncate a very long line of text to show '@@@' instead of filling screen
 set display=truncate
 
-" Confirm before quitting
-set confirm: :q
+" Prompt to save instead of failing when quitting with unsaved changes
+set confirm
 
 if filereadable(expand('~/.vim/code.vim'))
   source ~/.vim/code.vim
